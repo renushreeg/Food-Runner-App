@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tool_bar"
+    tools:context=".Activity.SignUpActivity">
+
+    <EditText
+        android:id="@+id/etSignUpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:hint=" Name(Min. 3 characters)"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#c2c2c2" />
+
+    <EditText
+        android:id="@+id/etSignUpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSignUpName"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint=" Email Address"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#c2c2c2" />
+
+    <EditText
+        android:id="@+id/etSignUpMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSignUpEmail"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint=" MobileNumber(10 digits)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#c2c2c2" />
+
+    <EditText
+        android:id="@+id/etSignUpDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSignUpMobileNumber"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint=" Delivery Address"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#c2c2c2" />
+
+    <EditText
+        android:id="@+id/etSignUpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSignUpDelivery"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint=" Password(Min. 4 characters)"
+        android:inputType="text|number"
+        android:padding="10dp"
+        android:textColor="#c2c2c2" />
+
+    <EditText
+        android:id="@+id/etSignUpConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSignUpPassword"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint=" Confirm Password"
+        android:inputType="text|number"
+        android:padding="10dp"
+        android:textColor="#c2c2c2" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSignUpConfirmPassword"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/dark_orange"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
